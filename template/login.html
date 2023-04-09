@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        {% with messages = get_flashed_messages(with_categories=True) %}
+            {% if messages %}
+                {% for category,message in messages %}
+                    <div class="alert alert-{{category}}">
+                        <p>{{message}}</p>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <form action="" method="post" novalidate>
+            <fieldset class="form-group">
+                <legend>{{title}}</legend>
+            
+            {{ form.hidden_tag() }}
+            <p>
+                {{form.email.label}} <br>
+                {{form.email(size=35)}}
+                {% for error in form.email.errors %}
+                    <span>{{error}}</span>
+                {%endfor%}
+            </p>
+            <p>
+                {{form.password.label}} <br>
+                {{form.password(size=35)}}
+                {% for error in form.password.errors %}
+                    <span>{{error}}</span>
+                {%endfor%}
+            </p>
+            <p>
+                {{form.submit()}}
+            </p>
+            </fieldset>
+        </form>
+
+    </body>
+</html>

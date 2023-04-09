@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cards</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+  text-align: center;
+  padding: 10px;
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+</style>
+<body>
+
+<div class="main">
+
+ <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="{{ url_for('static', filename='uploads/images/Apillon.png') }}">
+</div>
+<div class="title">
+ <h1>Apillon Ambassador</h1>
+</div>
+<div class="des">
+ <p>A Web3 development platform empowering developers to build in the Polkadot ecosystem.</p>
+<button onclick="window.location.href = 'https://apillon.io/community/'">Read More...</button>
+</div>
+</div>
+
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="{{ url_for('static', filename='uploads/images/Adobe.png') }}">
+</div>
+<div class="title">
+ <h1>Adobe India Women-in-Technology Scholarship</h1>
+</div>
+<div class="des">
+ <p>They strive towards creating gender equality by encouraging women.</p>
+<button onclick="window.location.href = 'https://research.adobe.com/adobe-india-women-in-technology-scholarship/'">Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="{{ url_for('static', filename='uploads/images/Aleo.png') }}">
+</div>
+<div class="title">
+ <h1>Aleo Ambassador Program</h1>
+</div>
+<div class="des">
+ <p>Aleo is a Layer 1 blockchain bringing privacy to the web.</p>
+<button onclick="window.location.href = 'https://research.adobe.com/adobe-india-women-in-technology-scholarship/'">Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{{ url_for('static', filename='uploads/images/Alexa.png') }}">
+</div>
+<div class="title">
+ <h1>Alexa Student Influencer Program</h1>
+</div>
+<div class="des">
+ <p>It is a campus connect program that aims to form a network of like-minded students across India.</p>
+<button onclick="window.location.href = 'https://developer.amazon.com/en-IN/alexa/alexa-student-influencer/'">Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{{ url_for('static', filename='uploads/images/appwrite.png') }}">
+</div>
+<div class="title">
+ <h1>
+    Appwrite Heroes</h1>
+</div>
+<div class="des">
+ <p>The Appwrite Heroes program is an exclusive group of developers who are experts in Appwrite</p>
+<button onclick="window.location.href = 'https://appwrite.io/heroes'">Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="{{ url_for('static', filename='uploads/images/Archway.jpg') }}">
+</div>
+<div class="title">
+ <h1>
+    Archway Ambassador</h1>
+</div>
+<div class="des">
+ <p>Join the global program to play a key role in supporting web3 developers.</p>
+<button onclick="window.location.href = 'https://blog.archway.io/introducing-the-archway-ambassador-program-bbfe63129109'">Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="{{ url_for('static', filename='uploads/images/Auth0ambassador.png') }}">
+</div>
+<div class="title">
+ <h1>
+Auth0 Ambassador Program</h1>
+</div>
+<div class="des">
+ <p>Join the community by sharing knowledge on identity and security related topics.</p>
+<button onclick="window.location.href = 'https://auth0.com/ambassador-program'">Read More...</button>
+
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{{ url_for('static', filename='uploads/images/AWSCommunityBuilders.png') }}">
+</div>
+<div class="title">
+ <h1>
+    AWS Community Builders</h1>
+</div>
+<div class="des">
+ <p>It offers technical resources, mentorship, and networking opportunities to AWS enthusiasts.</p>
+<button onclick="window.location.href = 'https://aws.amazon.com/developer/community/community-builders/'">Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="{{ url_for('static', filename='uploads/images/AWSHeroes.png') }}">
+</div>
+<div class="title">
+ <h1>
+    AWS Heroes</h1>
+</div>
+<div class="des">
+ <p>It recognizes a vibrant, worldwide group of AWS experts whose has a real impact within the community.</p>
+<button onclick="window.location.href = 'https://aws.amazon.com/developer/community/heroes/'">Read More...</button>
+</div>
+</div>
+</div>
+</body>
+</html>

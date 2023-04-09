@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="{{ url_for('Programs')}}">Programs</a></li>
+          <li><a href="{{ url_for('Ambassodor')}}">Ambassador</a></li>
+          <li><a href="#">Ask me anything</a></li>
+        </ul>
+      </div>
+      <div class="menu">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
+  <section class="hero">
+    <img src="{{ url_for('static', filename='uploads/images/1.png') }}" class="translateX" data-speed="0.25" id="moon" alt="">
+    <img src="{{ url_for('static', filename='uploads/images/2.png') }}" class="translateY" data-speed="0.35" id="clouds" alt="">
+    <img src="{{ url_for('static', filename='uploads/images/3.png') }}" class="translateY" data-speed="0.15" id="mount" alt="">
+    <h1 id="text" class="translateX" data-speed="-3">Discover New Horizons</h1>
+    <a href="expo.html" id="btn" onclick="runPythonScript()">Explore</a>
+
+    <img src="{{ url_for('static', filename='uploads/images/4.png') }}" class="translateY" data-speed="0" id="base" alt="">
+  </section>
+  <section id="about" class="section-padding">
+    <div class="container grid">
+      <div class="left-content">
+        <h4>Explore the oppotunities</h4>
+      </div>
+      <div class="right-content">
+        <img src="{{ url_for('static', filename='uploads/images/expo.png') }}" alt="my image">
+      </div>
+    </div>
+    <div class="containerr grid">
+      <div class="left-contentt">
+        <h5 class="heading">Coder Corps</h5>
+        <p>All in one place where you can find all the resources and details of ambassador/fellowship, Hackathons,open source events, web dev sites, js toolkits and etc.</p>
+        <img src="{{ url_for('static', filename='uploads/images/c1.png') }}" alt="">
+      </div>
+      <div class="right-content">
+        <h5 class="heading">Community?</h5>
+        <p>For the students
+           By the students</p>
+        <img src="{{ url_for('static', filename='uploads/images/c2.png') }}" alt="">
+      </div>
+
+  </div>
+
+    <div class="containerrr grid">
+      <div class="left-content">
+        <h5 class="heading">peer to peer learning</h5>
+        <p>Students support each other and to share or show their skills.</p>
+        <div>
+          <img src="{{ url_for('static', filename='uploads/images/c4.png') }}" alt="">
+          </div>
+      </div>
+    </div>
+      <div class="right-content">
+        <h5 class="heading">Tech Community means</h5>
+        <p>A place 
+          where you can connect with other professionals, 
+          share ideas and insights, and 
+          learn from each other's experiences.</p>
+      </div>
+    <div class="containerd grid">
+      <div class="lesft-content">
+        <img src="{{ url_for('static', filename='uploads/images/c5.jpg') }}" alt="">
+      </div>
+      <div class="right-content">
+        <h4>Here you can find all the resources and details of Open Source Programs and event that are available across different countries.</h4>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <a href="#">
+        <img src="uploads/images/logo.gif" alt="">
+      </a>
+    </div>
+  </footer>
+   <script src="{{url_for('static',filename='script/main.js')}}">
+    
+   </script>
+</body>
+</html>
