@@ -1,6 +1,6 @@
-# face-attendance-system
+# StuWeb
 
-Face attendance system using face recognition with Python !
+A platform to help students find resources, hackathons, events, Ambassador programs etc with Python !
 
 ## execution
 
