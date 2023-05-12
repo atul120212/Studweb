@@ -7,9 +7,8 @@ A platform to help students find resources, hackathons, events, Ambassador progr
 - Python 3.8
 
 import packages - 
-os.path, datetime, pickle
-tkinter, cv2, PIL, face_recognition
-util, test
+os.path, datetime, pickle, subprocess,
+tkinter, cv2
 
 like - 
 
